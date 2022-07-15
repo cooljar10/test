@@ -1,5 +1,6 @@
 import os
-os.system("cd home/mtowner/minetest && cmake . -DRUN_IN_PLACE=TRUE -DBUILD_SERVER=TRUE -DBUILD_CLIENT=FALSE -DIRRLICHT>os.system("cd /home/mtowner/minetest/mods && rm -fr mesecons")
+os.system("cd home/mtowner/minetest && cmake . -DRUN_IN_PLACE=TRUE -DBUILD_SERVER=TRUE -DBUILD_CLIENT=FALSE -DIRRLICHT")
+os.system("cd home/mtowner/minetest/mods && rm -fr mesecons")
 os.system("cd home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/mesecons.git")
 os.system("cd home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/areas.git")
 os.system("cd home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/unified_inventory.git")
