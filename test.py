@@ -1,10 +1,9 @@
 import os
-os.system("cd /home/mtowner/minetest && cmake . -DRUN_IN_PLACE=TRUE -DBUILD_SERVER=TRUE -DBUILD_CLIENT=FALSE -DIRRLICHT_INCLUDE_DIR=/usr/local/include/irrlicht -DENABLE_LEVELDB=ON -DENABLE_POSTGRESQL=OFF")
+os.system("cd /home/mtowner/minetest && cmake . -DRUN_IN_PLACE=TRUE -DBUILD_SERVER=TRUE -DBUILD_CLIENT=FALSE -DIRRLICHT_INCLUDE_DIR=/usr/local/include/irrlicht -DENABLE_LEVELDB=ON -DENABLE_POSTGRESQL=OFF && make -j1")
 os.system("cd /home/mtowner/minetest/mods && rm -fr mesecons")
 os.system("cd /home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/mesecons.git")
 os.system("cd /home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/areas.git")
 os.system("cd /home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/unified_inventory.git")
-os.system("cd /home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/moreblock")
 os.system("cd /home/mtowner/minetest/mods && https://github.com/minetest-mods/moreores.git")
 os.system("cd /home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/skinsdb.git")
 os.system("cd /home/mtowner/minetest/mods && git clone https://github.com/minetest-mods/maptools.git")
